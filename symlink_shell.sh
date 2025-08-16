@@ -60,7 +60,7 @@ done
 # --- 變數設定 ---
 # 1. 你的外接硬碟路徑。
 # 請將這裡替換成你的實際路徑，例如 /Volumes/MyExternalHDD
-EXTERNAL_DRIVE_PATH=""
+EXTERNAL_DRIVE_PATH="/Volumes/KINGSTON/symlink-data"
 
 # 2. 需要轉移的資料夾映射
 # 格式: "原始路徑:外接硬碟相對路徑"
@@ -71,6 +71,41 @@ FOLDER_MAPPINGS=(
     # "$HOME/Library/Caches/SomeAppCache:Library/Caches/AppCache"
     # "$HOME/.vscode/extensions:Apps/vscode/extensions"
     # "$HOME/Library/Application Support/Google/Chrome/Default:Google/Chrome/Default"
+
+    # vscode
+    "$HOME/.vscode/extensions:vscode/extensions"
+    "$HOME/Library/Application Support/Code:vscode/Code-Data"
+    # vscode-insider
+    "$HOME/.vscode-insiders/extensions:vscode-insider/extensions"
+    "$HOME/Library/Application Support/Code - Insiders:vscode-insider/Code-Insiders-Data"
+    # windsurf
+    "$HOME/.windsurf/extensions:windsurf/extensions"
+    "$HOME/Library/Application Support/Windsurf:windsurf/Windsurf-Data"
+    "$HOME/.codeium/windsurf/ws-browser:windsurf/ws-browser"
+    "$HOME/.codeium/windsurf/cascade:windsurf/cascade" # 聊天記錄
+    # cursor
+    "$HOME/.cursor/extensions:cursor/extensions"
+    "$HOME/Library/Application Support/Cursor:cursor/Cursor-Data"
+
+    # edge
+    "$HOME/Library/Application Support/Microsoft Edge:edge/Edge-User-Data"
+    "$HOME/Library/Caches/Microsoft Edge:edge/Edge-Caches"
+    # chrome
+    "$HOME/Library/Application Support/Google/Chrome:chrome/Chrome-User-Data"
+    "$HOME/Library/Caches/Google/Chrome:chrome/Chrome-Caches"
+
+    # go
+    # 注意：~/go這個資料夾我是直接修改.zshrc的$GOPATH
+    "$HOME/Library/Caches/go-build:go-symlink/go-build"
+
+    # # Android
+    "$HOME/Library/Android:Android"
+
+    # # Steam
+    "$HOME/Library/Application Support/Steam:Steam"
+
+    # # Notion
+    "$HOME/Library/Application Support/Notion:Notion"
 )
 
 # 3. 是否在移動前進行確認 (true/false)
