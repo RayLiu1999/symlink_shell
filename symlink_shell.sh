@@ -89,22 +89,23 @@ FOLDER_MAPPINGS=(
 
     # edge
     "$HOME/Library/Application Support/Microsoft Edge:edge/Edge-User-Data"
-    "$HOME/Library/Caches/Microsoft Edge:edge/Edge-Caches"
+    "$HOME/Library/Caches/Microsoft Edge:edge/Edge-Caches" # 只是快取，可清空
     # chrome
     "$HOME/Library/Application Support/Google/Chrome:chrome/Chrome-User-Data"
-    "$HOME/Library/Caches/Google/Chrome:chrome/Chrome-Caches"
+    "$HOME/Library/Caches/Google/Chrome:chrome/Chrome-Caches" # 只是快取，可清空
 
     # go
     # 注意：~/go這個資料夾我是直接修改.zshrc的$GOPATH
-    "$HOME/Library/Caches/go-build:go-symlink/go-build"
+    "$HOME/Library/Caches/go-build:go-symlink/go-build" # 只是快取，可清空
 
-    # # Android
+    # Android
     "$HOME/Library/Android:Android"
+    "$HOME/.gradle:Android/gradle" # 只是快取，可清空
 
-    # # Steam
+    # Steam
     "$HOME/Library/Application Support/Steam:Steam"
 
-    # # Notion
+    # Notion
     "$HOME/Library/Application Support/Notion:Notion"
 )
 
