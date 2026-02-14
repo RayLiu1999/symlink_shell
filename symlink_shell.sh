@@ -78,14 +78,18 @@ FOLDER_MAPPINGS=(
     # vscode-insider
     "$HOME/.vscode-insiders/extensions:vscode-insider/extensions"
     "$HOME/Library/Application Support/Code - Insiders:vscode-insider/Code-Insiders-Data"
-    # windsurf
-    "$HOME/.windsurf/extensions:windsurf/extensions"
-    "$HOME/Library/Application Support/Windsurf:windsurf/Windsurf-Data"
-    "$HOME/.codeium/windsurf/ws-browser:windsurf/ws-browser"
-    "$HOME/.codeium/windsurf/cascade:windsurf/cascade" # 聊天記錄
-    # cursor
-    "$HOME/.cursor/extensions:cursor/extensions"
-    "$HOME/Library/Application Support/Cursor:cursor/Cursor-Data"
+    # # windsurf
+    # "$HOME/.windsurf/extensions:windsurf/extensions"
+    # "$HOME/Library/Application Support/Windsurf:windsurf/Windsurf-Data"
+    # "$HOME/.codeium/windsurf/ws-browser:windsurf/ws-browser"
+    # "$HOME/.codeium/windsurf/cascade:windsurf/cascade" # 聊天記錄
+    # # cursor
+    # "$HOME/.cursor/extensions:cursor/extensions"
+    # "$HOME/Library/Application Support/Cursor:cursor/Cursor-Data"
+
+    # antigravity
+    "$HOME/.gemini/antigravity:antigravity/Antigravity-Data"
+    "$HOME/.antigravity/extensions:antigravity/extensions"
 
     # edge
     "$HOME/Library/Application Support/Microsoft Edge:edge/Edge-User-Data"
@@ -101,6 +105,14 @@ FOLDER_MAPPINGS=(
     # Android
     "$HOME/Library/Android:Android"
     "$HOME/.gradle:Android/gradle" # 只是快取，可清空
+
+    # Xcode
+    # "$HOME/Library/Developer/CoreSimulator:Xcode/CoreSimulator" # 模擬器，這個用了模擬器會讀不到，GG
+    # "$HOME/Library/Caches/com.apple.dt.Xcode:Xcode/Caches" # 只是快取，可清空
+    # "$HOME/Library/Developer/Xcode:Xcode/Xcode-Data" # Xcode相關資料
+    # "$HOME/Library/Caches/Xcode:Xcode/Caches2" # 只是快取，可清空
+    # 只是快取，可直接清空
+    # "/Library/Developer/CoreSimulator/Caches/*"
 
     # Steam
     "$HOME/Library/Application Support/Steam:Steam"
